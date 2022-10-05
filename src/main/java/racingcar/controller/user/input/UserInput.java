@@ -1,4 +1,4 @@
 package racingcar.controller.user.input;
 
-public class UserInput {
+public interface UserInput {
 }
