@@ -5,7 +5,7 @@ import racingcar.view.Message;
 public class RequireMessage implements Message {
     protected String value;
 
-    public RequireMessage(String value) {
+    protected RequireMessage(String value) {
         this.value = value;
     }
 

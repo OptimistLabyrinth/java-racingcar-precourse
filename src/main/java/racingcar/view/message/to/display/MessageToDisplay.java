@@ -5,7 +5,7 @@ import racingcar.view.Message;
 public class MessageToDisplay implements Message {
     protected String value;
 
-    public MessageToDisplay(String value) {
+    protected MessageToDisplay(String value) {
         this.value = value;
     }
 

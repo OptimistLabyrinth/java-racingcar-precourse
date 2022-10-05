@@ -5,7 +5,7 @@ import racingcar.view.Message;
 public class ErrorMessage implements Message {
     protected String value;
 
-    public ErrorMessage(String value) {
+    protected ErrorMessage(String value) {
         this.value = value;
     }
 
