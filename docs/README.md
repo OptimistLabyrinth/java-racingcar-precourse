@@ -153,7 +153,7 @@ sequenceDiagram
     - CarNamesRequireInputMessage: 사용자에게 자동차 이름 입력을 요청하는 메시지
     - NumberOfRoundRequireInputMessage: 사용자에게 시도할 횟수 입력을 요청하는 메시지
   - MessageToDisplay (추상클래스)
-    - StartOfRacingMessageToDisplay: 게임 시작할 때 "실행 결과" 라고 한 줄 출력하는 메시지
+    - StartOfRaceMessageToDisplay: 게임 시작할 때 "실행 결과" 라고 한 줄 출력하는 메시지
     - CurrentRaceResultMessageToDisplay: 현재까지 자동차 경주 결과를 출력하는 메시지
     - FinalWinnerMessageToDisplay: 최종 우승자를 출력하는 메시지
   - ErrorMessage (추상클래스)
