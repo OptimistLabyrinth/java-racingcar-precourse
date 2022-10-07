@@ -6,7 +6,7 @@ import racingcar.controller.user.input.UserInput;
 
 public class CarNamesInputAcceptor implements InputAcceptor {
     @Override
-    public UserInput<String> accept() {
+    public UserInput accept() {
         final String carNamesInputString = Console.readLine();
         return new CarNamesInput(carNamesInputString);
     }
