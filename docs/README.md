@@ -181,7 +181,8 @@ sequenceDiagram
 - RacingCar: 경주에 참여하는 개별 자동차
 - CarName: 개별 자동차 이름
 - Advance: 개별 자동차 전진 횟수
-- NumberOfRound: 시도할 횟수
+- Round (인터페이스)
+  - NumberOfRound: 시도할 횟수
 - RandomNumberGenerator
 - GeneratedRandomNumber
 - ActionSelector (인터페이스)
