@@ -1,4 +1,4 @@
-package racingcar.model.input.validator.car.names;
+package racingcar.model.input.validator;
 
 import racingcar.controller.user.input.UserInput;
 

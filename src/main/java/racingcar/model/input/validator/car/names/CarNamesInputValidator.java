@@ -4,6 +4,7 @@ import racingcar.controller.user.input.CarNamesInput;
 import racingcar.controller.user.input.UserInput;
 import racingcar.model.delimiter.Delimiter;
 import racingcar.model.input.validator.InputValidator;
+import racingcar.model.input.validator.UserInputEmpty;
 import racingcar.model.input.validator.ValidateResult;
 
 public class CarNamesInputValidator implements InputValidator {

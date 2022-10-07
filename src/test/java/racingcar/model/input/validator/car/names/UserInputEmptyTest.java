@@ -5,6 +5,7 @@ import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
 import racingcar.controller.user.input.CarNamesInput;
 import racingcar.controller.user.input.UserInput;
+import racingcar.model.input.validator.UserInputEmpty;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
