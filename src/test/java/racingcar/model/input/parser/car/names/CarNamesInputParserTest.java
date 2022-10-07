@@ -1,11 +1,12 @@
-package racingcar.model.input.parser;
+package racingcar.model.input.parser.car.names;
 
 import org.junit.jupiter.api.Test;
 import racingcar.controller.user.input.CarNamesInput;
 import racingcar.controller.user.input.UserInput;
 import racingcar.model.delimiter.CarNamesInputDelimiter;
 import racingcar.model.delimiter.Delimiter;
-import racingcar.model.input.parser.car.names.CarNamesInputParser;
+import racingcar.model.input.parser.InputParser;
+import racingcar.model.input.parser.ParseResult;
 
 import java.util.ArrayList;
 
@@ -13,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class CarNamesInputParserTest {
     @Test
-    public void successInParseMethod() {
+    public void succeedInParseMethod() {
         UserInput userInput = new CarNamesInput("a01, b33 , c44");
         Delimiter delimiter = new CarNamesInputDelimiter(",");
         InputParser<ArrayList<String>> inputParser = new CarNamesInputParser(userInput, delimiter);
