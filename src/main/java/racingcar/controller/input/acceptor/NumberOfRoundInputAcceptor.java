@@ -6,9 +6,8 @@ import racingcar.controller.user.input.UserInput;
 
 public class NumberOfRoundInputAcceptor implements InputAcceptor {
     @Override
-    public UserInput<Integer> accept() {
+    public UserInput<String> accept() {
         final String numberOfRoundInputString = Console.readLine();
-        int numberOfRoundInputInt = Integer.parseInt(numberOfRoundInputString);
-        return new NumberOfRoundInput(numberOfRoundInputInt);
+        return new NumberOfRoundInput(numberOfRoundInputString);
     }
 }
