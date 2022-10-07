@@ -186,9 +186,9 @@ sequenceDiagram
 - RandomNumberGenerator
 - GeneratedRandomNumber
 - ActionSelector (인터페이스)
-  - ForwardOrStopActionSelector
+  - ForwardOrStayActionSelector
 - ActionSelectorResult (인터페이스)
-  - ForwardOrStopActionSelectorResult: 무작위 숫자에 대한 결과로 전진할지 제자리에 있을지 결정한 결과값
+  - ForwardOrStayActionSelectorResult: 무작위 숫자에 대한 결과로 전진할지 제자리에 있을지 결정한 결과값
 - FinalWinnerFactory
 - FinalWinner (인터페이스)
   - SingleFinalWinner: 한 명의 최종 우승자
