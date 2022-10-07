@@ -1,4 +1,4 @@
-package racingcar.model.finalwinner;
+package racingcar.model.finalwinner.entity;
 
 public class FinalWinnerName {
     private final String value;
