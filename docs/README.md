@@ -168,10 +168,12 @@ sequenceDiagram
 - ValidateResult (인터페이스)
   - CarNamesValidateResult: 자동차 이름 유효성 검증 결과
   - NumberOfRoundValidateResult: 시도할 횟수 유효성 검증 결과
-- InputDelimiter (인터페이스)
+- Delimiter (인터페이스)
   - CarNamesInputDelimiter: 자동차 이름 구분자, 쉼표(,)
+  - FinalWinnerOutputDelimiter: 우승한 자동차 이름 구분자, 쉼표(,)
 - InputParser (인터페이스)
   - CarNamesInputParser
+  - NumberOfRoundInputParser
 - ParseResult (인터페이스)
   - CarNamesInputParseResult: 자동차 이름의 배열를 저장
   - NumberOfRoundParseResult: 시도할 횟수를 저장
@@ -186,10 +188,11 @@ sequenceDiagram
   - ForwardOrStopActionSelector
 - ActionSelectorResult (인터페이스)
   - ForwardOrStopActionSelectorResult: 무작위 숫자에 대한 결과로 전진할지 제자리에 있을지 결정한 결과값
-- FinalWinner: 최종 우승자
+- FinalWinnerFactory
+- FinalWinner (인터페이스)
+  - SingleFinalWinner: 한 명의 최종 우승자
+  - MultipleFinalWinner: 두 명 이상의 최종 우승자
 - FinalWinnerName: 최종 우승자 이름
-- OutputDelimiter (인터페이스)
-  - FinalWinnerOutputDelimiter: 우승한 자동차 이름 구분자, 쉼표(,)
 
 -----
 
