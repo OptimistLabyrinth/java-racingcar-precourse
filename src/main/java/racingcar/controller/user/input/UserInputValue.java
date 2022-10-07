@@ -1,13 +1,13 @@
 package racingcar.controller.user.input;
 
-public class UserInputValue<T> {
-    private final T value;
+public class UserInputValue {
+    private final String value;
 
-    public UserInputValue(T value) {
+    public UserInputValue(String value) {
         this.value = value;
     }
 
-    public T getValue() {
+    public String getValue() {
         return value;
     }
 }

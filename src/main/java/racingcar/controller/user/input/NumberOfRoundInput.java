@@ -1,14 +1,14 @@
 package racingcar.controller.user.input;
 
-public class NumberOfRoundInput implements UserInput<String> {
-    private final UserInputValue<String> userInputValue;
+public class NumberOfRoundInput implements UserInput {
+    private final UserInputValue userInputValue;
 
     public NumberOfRoundInput(String value) {
-        this.userInputValue = new UserInputValue<>(value);
+        this.userInputValue = new UserInputValue(value);
     }
 
     @Override
-    public UserInputValue<String> getUserInputValue() {
+    public UserInputValue getUserInputValue() {
         return userInputValue;
     }
 }
