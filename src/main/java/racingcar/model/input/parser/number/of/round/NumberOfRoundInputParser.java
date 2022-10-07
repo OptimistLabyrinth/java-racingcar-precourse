@@ -1,21 +1,21 @@
 package racingcar.model.input.parser.number.of.round;
 
 import racingcar.controller.user.input.UserInput;
-import racingcar.model.delimiter.Delimiter;
 import racingcar.model.input.parser.InputParser;
 import racingcar.model.input.parser.ParseResult;
+import racingcar.model.input.parser.ParseResultValue;
 
 public class NumberOfRoundInputParser implements InputParser<Integer> {
     private final UserInput userInput;
-    private final Delimiter delimiter;
 
-    public NumberOfRoundInputParser(UserInput userInput, Delimiter delimiter) {
+    public NumberOfRoundInputParser(UserInput userInput) {
         this.userInput = userInput;
-        this.delimiter = delimiter;
     }
 
     @Override
     public ParseResult<Integer> parse() {
-        return new NumberOfRoundParseResult(null);
+        int numberOfRoundInt = Integer.parseInt(userInput.getUserInputValue().getValue());
+        ParseResultValue<Integer> parseResultValue = new ParseResultValue<>(numberOfRoundInt);
+        return new NumberOfRoundParseResult(parseResultValue);
     }
 }
