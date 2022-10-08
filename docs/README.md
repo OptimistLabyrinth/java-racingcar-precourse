@@ -152,13 +152,15 @@ sequenceDiagram
   - RequireMessage (추상클래스)
     - CarNamesRequireInputMessage: 사용자에게 자동차 이름 입력을 요청하는 메시지
     - NumberOfRoundRequireInputMessage: 사용자에게 시도할 횟수 입력을 요청하는 메시지
-  - MessageToDisplay (추상클래스)
-    - StartOfRaceMessageToDisplay: 게임 시작할 때 "실행 결과" 라고 한 줄 출력하는 메시지
-    - CurrentRaceResultMessageToDisplay: 현재까지 자동차 경주 결과를 출력하는 메시지
-    - FinalWinnerMessageToDisplay: 최종 우승자를 출력하는 메시지
+  - ResultMessage (추상클래스)
+    - CurrentRaceResultResultMessage: 현재까지 자동차 경주 결과를 출력하는 메시지
+    - FinalWinnerResultMessage: 최종 우승자를 출력하는 메시지
   - ErrorMessage (추상클래스)
     - CarNamesErrorMessage: 자동차 이름에 대한 사용자 입력이 유효하지 않을 때 출력하는 오류 메시지
     - NumberOfRoundErrorMessage: 시도할 횟수에 대한 사용자 입력이 유효하지 않을 때 출력하는 오류 메시지
+  - SimpleLine (추상클래스)
+    - BlankSimpleLine: 아무것도 없이 빈 줄 출력하는 메시지
+    - StartOfRaceSimpleLine: 게임 시작할 때 "실행 결과" 라고 한 줄 출력하는 메시지
 
 ## Model 영역에서 사용할 클래스/인터페이스
 
