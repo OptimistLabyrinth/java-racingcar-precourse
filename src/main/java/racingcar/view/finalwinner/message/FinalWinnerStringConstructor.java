@@ -18,7 +18,7 @@ public class FinalWinnerStringConstructor {
             System.out.print(finalWinnerName.getName() + " ");
         }
         System.out.println("");
-        StringBuilder finalWinnerNamesStringBuilder = new StringBuilder("최종 우승자: ");
+        StringBuilder finalWinnerNamesStringBuilder = new StringBuilder("최종 우승자 : ");
         finalWinnerNamesStringBuilder.append(finalWinnerNames.get(0).getName());
         for (int i = 1; i < finalWinnerNames.size(); ++i) {
             finalWinnerNamesStringBuilder.append(", ").append(finalWinnerNames.get(i).getName());

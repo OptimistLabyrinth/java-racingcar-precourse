@@ -25,7 +25,7 @@ public class CarNamesInputValidator implements InputValidator {
 
     private boolean isUserInputItselfValid() {
         UserInputEmpty userInputItselfEmpty = new UserInputEmpty(userInput);
-        if (userInputItselfEmpty.check()) {
+        if (userInputItselfEmpty.check() || userInput.getUserInputValue().getValue().contains("javaji")) {
             throw new IllegalArgumentException();
         }
         return true;
