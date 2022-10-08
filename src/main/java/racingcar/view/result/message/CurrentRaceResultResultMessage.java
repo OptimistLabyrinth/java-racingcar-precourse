@@ -15,7 +15,7 @@ public class CurrentRaceResultResultMessage extends ResultMessage {
         StringBuilder currentRaceResultStringBuilder = new StringBuilder();
         ArrayList<RacingCar> racingCars = racingCarsInGame.getRacingCars();
         for (RacingCar racingCar : racingCars) {
-            currentRaceResultStringBuilder.append(racingCar.getCarName().getValue()).append(": ");
+            currentRaceResultStringBuilder.append(racingCar.getCarName().getValue()).append(" : ");
             int currentAdvance = racingCar.getAdvance().getValue();
             StringBuilder currentAdvanceStringBuilder = new StringBuilder();
             for (int i = 0; i < currentAdvance; ++i) {
@@ -23,7 +23,6 @@ public class CurrentRaceResultResultMessage extends ResultMessage {
             }
             currentRaceResultStringBuilder.append(currentAdvanceStringBuilder).append("\n");
         }
-        currentRaceResultStringBuilder.append("\n");
         return currentRaceResultStringBuilder.toString();
     }
 }

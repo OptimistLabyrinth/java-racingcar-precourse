@@ -139,58 +139,58 @@ sequenceDiagram
 ## Controller 영역에서 사용할 클래스/인터페이스
 
 - InputAcceptor (인터페이스)
-  - CarNamesInputAcceptor
-  - NumberOfRoundInputAcceptor
+    - CarNamesInputAcceptor
+    - NumberOfRoundInputAcceptor
 - UserInput (인터페이스)
-  - CarNamesInput: 자동차 이름 사용자 입력값
-  - NumberOfRoundInput: 시도할 횟수 사용자 입력값
+    - CarNamesInput: 자동차 이름 사용자 입력값
+    - NumberOfRoundInput: 시도할 횟수 사용자 입력값
 - MessagePrinter
 
 ## View 영역에서 사용할 클래스/인터페이스
 
 - Message (인터페이스)
-  - RequireMessage (추상클래스)
-    - CarNamesRequireInputMessage: 사용자에게 자동차 이름 입력을 요청하는 메시지
-    - NumberOfRoundRequireInputMessage: 사용자에게 시도할 횟수 입력을 요청하는 메시지
-  - ResultMessage (추상클래스)
-    - CurrentRaceResultResultMessage: 현재까지 자동차 경주 결과를 출력하는 메시지
-    - FinalWinnerResultMessage: 최종 우승자를 출력하는 메시지
-  - ErrorMessage (추상클래스)
-    - CarNamesErrorMessage: 자동차 이름에 대한 사용자 입력이 유효하지 않을 때 출력하는 오류 메시지
-    - NumberOfRoundErrorMessage: 시도할 횟수에 대한 사용자 입력이 유효하지 않을 때 출력하는 오류 메시지
-  - SimpleLine (추상클래스)
-    - BlankSimpleLine: 아무것도 없이 빈 줄 출력하는 메시지
-    - StartOfRaceSimpleLine: 게임 시작할 때 "실행 결과" 라고 한 줄 출력하는 메시지
+    - RequireMessage (추상클래스)
+        - CarNamesRequireInputMessage: 사용자에게 자동차 이름 입력을 요청하는 메시지
+        - NumberOfRoundRequireInputMessage: 사용자에게 시도할 횟수 입력을 요청하는 메시지
+    - ResultMessage (추상클래스)
+        - CurrentRaceResultResultMessage: 현재까지 자동차 경주 결과를 출력하는 메시지
+        - FinalWinnerResultMessage: 최종 우승자를 출력하는 메시지
+    - ErrorMessage (추상클래스)
+        - CarNamesErrorMessage: 자동차 이름에 대한 사용자 입력이 유효하지 않을 때 출력하는 오류 메시지
+        - NumberOfRoundErrorMessage: 시도할 횟수에 대한 사용자 입력이 유효하지 않을 때 출력하는 오류 메시지
+    - SimpleLine (추상클래스)
+        - BlankSimpleLine: 아무것도 없이 빈 줄 출력하는 메시지
+        - StartOfRaceSimpleLine: 게임 시작할 때 "실행 결과" 라고 한 줄 출력하는 메시지
 
 ## Model 영역에서 사용할 클래스/인터페이스
 
 - InputValidator (인터페이스)
-  - CarNamesInputValidator
-  - NumberOfRoundInputValidator
+    - CarNamesInputValidator
+    - NumberOfRoundInputValidator
 - ValidateResult (인터페이스)
-  - CarNamesValidateResult: 자동차 이름 유효성 검증 결과
-  - NumberOfRoundValidateResult: 시도할 횟수 유효성 검증 결과
+    - CarNamesValidateResult: 자동차 이름 유효성 검증 결과
+    - NumberOfRoundValidateResult: 시도할 횟수 유효성 검증 결과
 - Delimiter (인터페이스)
-  - CarNamesInputDelimiter: 자동차 이름 구분자, 쉼표(,)
-  - FinalWinnerOutputDelimiter: 우승한 자동차 이름 구분자, 쉼표(,)
+    - CarNamesInputDelimiter: 자동차 이름 구분자, 쉼표(,)
+    - FinalWinnerOutputDelimiter: 우승한 자동차 이름 구분자, 쉼표(,)
 - InputParser (인터페이스)
-  - CarNamesInputParser
-  - NumberOfRoundInputParser
+    - CarNamesInputParser
+    - NumberOfRoundInputParser
 - ParseResult (인터페이스)
-  - CarNamesInputParseResult: 자동차 이름의 배열를 저장
-  - NumberOfRoundParseResult: 시도할 횟수를 저장
+    - CarNamesInputParseResult: 자동차 이름의 배열를 저장
+    - NumberOfRoundParseResult: 시도할 횟수를 저장
 - RacingCarsInGame: 경주에 참여하는 모든 자동차를 저장하고 관리하는 역할
 - RacingCar: 경주에 참여하는 개별 자동차
 - CarName: 개별 자동차 이름
 - Advance: 개별 자동차 전진 횟수
 - Round (인터페이스)
-  - NumberOfRound: 시도할 횟수
+    - NumberOfRound: 시도할 횟수
 - RandomNumberGenerator
 - GeneratedRandomNumber
 - ActionSelector (인터페이스)
-  - ForwardOrStayActionSelector
+    - ForwardOrStayActionSelector
 - ActionSelectorResult (인터페이스)
-  - ForwardOrStayActionSelectorResult: 무작위 숫자에 대한 결과로 전진할지 제자리에 있을지 결정한 결과값
+    - ForwardOrStayActionSelectorResult: 무작위 숫자에 대한 결과로 전진할지 제자리에 있을지 결정한 결과값
 - FinalWinner (인터페이스)
 - FinalWinnerName: 최종 우승자 이름
 

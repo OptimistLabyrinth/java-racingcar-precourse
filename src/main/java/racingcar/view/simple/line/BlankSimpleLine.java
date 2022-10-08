@@ -1,12 +1,12 @@
 package racingcar.view.simple.line;
 
 public class BlankSimpleLine extends SimpleLine {
-    public BlankSimpleLine(String value) {
-        super(value);
+    public BlankSimpleLine() {
+        super("\n");
     }
 
     @Override
     public String getValue() {
-        return null;
+        return value;
     }
 }
