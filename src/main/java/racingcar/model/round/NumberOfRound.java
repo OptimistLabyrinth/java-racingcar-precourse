@@ -1,10 +1,12 @@
 package racingcar.model.round;
 
+import racingcar.model.input.parser.ParseResult;
+
 public class NumberOfRound implements Round {
     private int roundLeft;
 
-    public NumberOfRound(int roundLeft) {
-        this.roundLeft = roundLeft;
+    public NumberOfRound(ParseResult<Integer> parseResultNumberOfRound) {
+        this.roundLeft = parseResultNumberOfRound.getParseResultValue().getValue();
     }
 
     @Override
