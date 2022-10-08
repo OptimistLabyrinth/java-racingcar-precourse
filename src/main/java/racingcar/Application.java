@@ -6,6 +6,8 @@ import racingcar.controller.user.input.NumberOfRoundInput;
 import racingcar.controller.user.input.UserInput;
 import racingcar.model.delimiter.CarNamesInputDelimiter;
 import racingcar.model.delimiter.Delimiter;
+import racingcar.model.finalwinner.FinalWinnerName;
+import racingcar.model.finalwinner.FinalWinnersOfGame;
 import racingcar.model.input.parser.InputParser;
 import racingcar.model.input.parser.ParseResult;
 import racingcar.model.input.parser.car.names.CarNamesInputParser;
@@ -37,5 +39,12 @@ public class Application {
         CurrentRaceResultResultMessage currentRaceResultResultMessage =
                 new CurrentRaceResultResultMessage(racingCarsInGame);
         MessagePrinter.println(currentRaceResultResultMessage);
+
+        FinalWinnersOfGame finalWinnersOfGame = new FinalWinnersOfGame(racingCarsInGame);
+        ArrayList<FinalWinnerName> finalWinnerNames = finalWinnersOfGame.getFinalWinnerNames();
+        System.out.println("< finalWinnerNames >");
+        for (FinalWinnerName finalWinnerName : finalWinnerNames) {
+            System.out.println("  " + finalWinnerName.getName());
+        }
     }
 }

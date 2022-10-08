@@ -7,6 +7,10 @@ public class Advance {
         this.value = 0;
     }
 
+    public Advance(int value) {
+        this.value = value;
+    }
+
     public int getValue() {
         return value;
     }

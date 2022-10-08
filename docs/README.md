@@ -191,10 +191,7 @@ sequenceDiagram
   - ForwardOrStayActionSelector
 - ActionSelectorResult (인터페이스)
   - ForwardOrStayActionSelectorResult: 무작위 숫자에 대한 결과로 전진할지 제자리에 있을지 결정한 결과값
-- FinalWinnerFactory
 - FinalWinner (인터페이스)
-  - SingleFinalWinner: 한 명의 최종 우승자
-  - MultipleFinalWinner: 두 명 이상의 최종 우승자
 - FinalWinnerName: 최종 우승자 이름
 
 -----
