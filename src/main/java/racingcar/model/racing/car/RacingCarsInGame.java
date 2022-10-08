@@ -9,8 +9,7 @@ import java.util.ArrayList;
 public class RacingCarsInGame {
     private final ArrayList<RacingCar> racingCars;
 
-    public RacingCarsInGame(ParseResult<ArrayList<String>> carNamesParseResult,
-                            ParseResult<Integer> numberOfRoundParseResult) {
+    public RacingCarsInGame(ParseResult<ArrayList<String>> carNamesParseResult) {
         racingCars = new ArrayList<>();
         ArrayList<String> carNamesList = carNamesParseResult.getParseResultValue().getValue();
         for (String s : carNamesList) {
