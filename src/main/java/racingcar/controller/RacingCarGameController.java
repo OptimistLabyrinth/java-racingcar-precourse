@@ -6,7 +6,6 @@ import racingcar.model.racing.car.RacingCarsInGame;
 import racingcar.model.round.NumberOfRound;
 import racingcar.view.Message;
 import racingcar.view.result.message.CurrentRaceResultResultMessage;
-import racingcar.view.simple.line.BlankSimpleLine;
 
 import java.util.ArrayList;
 
